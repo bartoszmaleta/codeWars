@@ -1,4 +1,4 @@
-package kyu8;
+package kyu7;
 
 public class SquareDigit {
     public static void main(String[] args) {
