@@ -1,5 +1,7 @@
 package kyu8;
 
+import java.util.Arrays;
+
 public class SmallestIntegerFinder {
     public static void main(String[] args) {
         int[] myArray = {78,56,232,12,11,43};
@@ -13,7 +15,10 @@ public class SmallestIntegerFinder {
                 smallestInteger = args[i];
             }
         }
+        // Arrays.sort(args);
+        // return args[0];
         // System.out.println(smallestInteger);
         return smallestInteger;
+        
     }
 }
