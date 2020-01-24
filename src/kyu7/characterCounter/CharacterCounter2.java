@@ -17,13 +17,7 @@ public class CharacterCounter2 {
             map.put(array[i], value);
         }
         Set<Object> uniqueValues = new HashSet<Object>(map.values());
-        System.out.println(uniqueValues);
-        System.out.println(map.values().size());
         
-        ArrayList<Object> arrayListOfValues = new ArrayList<Object>();
-        arrayListOfValues.add(map.values());
-        System.out.println(arrayListOfValues);
-
         if (uniqueValues.size() == 1)
             return true;
         else
