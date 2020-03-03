@@ -39,7 +39,12 @@ public class Welcome {
             }
         }
 
+
         return "Welcome";
+
+//        one line!
+//        return dict.getOrDefault(language, dict.get("english"));
+//            dict.getOrDefault()
 
     }
 
