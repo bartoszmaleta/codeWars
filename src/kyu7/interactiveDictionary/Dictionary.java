@@ -24,14 +24,18 @@ public class Dictionary {
             }
         }
 
+        // Redundnat but cool
         for (Map.Entry<String, String> entry : dict.entrySet()) {
             if (entry.getValue().equals(key)) {
                 return entry.getKey();
             }
         }
         String messageWhenNotFound = "Cant find entry for " + key;
-//        System.out.println("qwe");
         return messageWhenNotFound;
+    }
+
+    public String look2(String key) {
+        return this.dict.getOrDefault(key, "Cant find entry for " + key);
     }
 }
 
