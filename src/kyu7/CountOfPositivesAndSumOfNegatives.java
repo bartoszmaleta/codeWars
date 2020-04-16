@@ -32,4 +32,15 @@ public class CountOfPositivesAndSumOfNegatives {
     public static void main(String[] args) {
         System.out.println(countPositivesSumNegatives(new int[] {}));
     }
+
+    public static int[] countPositivesSumNegatives2(int[] input)
+    {
+        if (input == null || input.length == 0) return new int[] {};
+        int count = 0,sum = 0;
+        for (int i : input) {
+            if (i > 0) count ++;
+            if (i < 0) sum += i;
+        }
+        return new int[] {count,sum};
+    }
 }
