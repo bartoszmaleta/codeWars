@@ -12,3 +12,8 @@ function grader(score) {
       };
 
 };
+
+
+// ANTOHER SOLUTIONs
+
+grader = s => s > 1 || s < 0.6 ? 'F' : s < 0.7 ? 'D' : s < 0.8 ? 'C' : s < 0.9 ? 'B' : 'A';
