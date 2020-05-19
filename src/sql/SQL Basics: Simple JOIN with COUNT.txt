@@ -1,0 +1,6 @@
+SELECT ps.id, ps.name, count(1) AS toy_count
+FROM people AS ps
+  LEFT JOIN toys AS ts
+  ON ts.people_id = ps.id
+
+GROUP BY ps.id, ps.name;
