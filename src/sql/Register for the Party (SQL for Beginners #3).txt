@@ -1,0 +1,4 @@
+INSERT --Your code here
+INTO participants (name, age, attending)
+VALUES ('Bartosz', 27, TRUE);
+SELECT * FROM participants;
