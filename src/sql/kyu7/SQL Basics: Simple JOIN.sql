@@ -1,4 +1,6 @@
--- Create your SELECT statement here
+--SELECT p.*,
+--       c.name AS company_name
+
 
 SELECT
 products.id,
