@@ -11,5 +11,7 @@ public class AreaOrPerimeter {
         } else {
             return perimeter;
         }
+        // ANOTHER SOULTION
+//        return a == b ? a * b : 2 * ( a + b );
     }
 }
