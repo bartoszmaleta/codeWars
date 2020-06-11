@@ -8,7 +8,7 @@ public class HowOldWillIBeIn2099 {
         if (birth > yearTo) {
             year = birth - yearTo;
             String inFutureBirth = "";
-            if(year == 1) {
+            if (year == 1) {
                 inFutureBirth = String.format("You will be born in %d year.", year);
             } else {
                 inFutureBirth = String.format("You will be born in %d years.", year);
@@ -32,7 +32,15 @@ public class HowOldWillIBeIn2099 {
     }
 
     public static void main(String[] args) {
-        CalculateAge(2011,22);
+        CalculateAge(2011, 22);
+    }
+
+    public static String CalculateAge2(int birth, int year) {
+        final int age = year - birth;
+        return
+                age == 0 ? "You were born this very year!" :
+                        age > 0 ? String.format("You are %d year%s old.", age, age == 1 ? "" : "s") :
+                                String.format("You will be born in %d year%s.", -age, -age == 1 ? "" : "s");
     }
 
 }
