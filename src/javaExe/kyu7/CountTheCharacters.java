@@ -1,4 +1,4 @@
-package javaExe.kyu8;
+package javaExe.kyu7;
 
 public class CountTheCharacters {
     public static int charCount(String str, char c) {
