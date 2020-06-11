@@ -7,5 +7,9 @@ public class SummationToN {
             result += i;
         }
         return result;
+
+
+        // ANOTHER SOLUTION
+//        return  n*(n+1)/2;
     }
 }
