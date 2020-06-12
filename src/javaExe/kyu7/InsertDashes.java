@@ -30,4 +30,18 @@ public class InsertDashes {
     public static void main(String[] args) {
         insertDash(454793);
     }
+
+    public static String insertDash2(int num) {
+        return (num+"").replaceAll("([13579])(?=[13579])", "$1-");
+    }
+
+    public static String insertDash3(int num) {
+        return Integer.toString(num).replaceAll("[13579](?=[13579])", "$0-");
+    }
+
+    public static String insertDash4(int num) {
+        return String.valueOf(num).replaceAll("(?<=[13579])(?=[13579])", "-");
+    }
+
+
 }
