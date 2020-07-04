@@ -7,3 +7,11 @@ function problem(x){
     return result;
   }
 }
+
+// SECOND SOLUTION
+const problem = x => typeof x === 'string' ? 'Error' : x * 50 + 6;
+
+// THIRD SOLUTION
+function problem(x){
+  return typeof x === "number" ? x * 50 + 6 : "Error";
+}
