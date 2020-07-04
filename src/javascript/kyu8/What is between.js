@@ -10,3 +10,6 @@ function between(a, b) {
   console.log(arr);
   return arr;
 }
+
+// SECOND SOLUTION
+const between = (a, b) => Array.from(new Array(b - a + 1), (_, i) => a + i);
