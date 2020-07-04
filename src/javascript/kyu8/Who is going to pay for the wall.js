@@ -11,7 +11,7 @@ function whoIsPaying(name){
 
 }
 
-
+// SECOND SOLUTION
 function whoIsPaying(name) {
     if (name.length <= 2) {
         return [name];
@@ -19,6 +19,7 @@ function whoIsPaying(name) {
     return [name, name.slice(0, 2)];
 }
 
+// THIRD SOLUTION
 function whoIsPaying(name) {
     return (name.length > 2) ? ([name, name.substr(0, 2)]) : [name];
 }
