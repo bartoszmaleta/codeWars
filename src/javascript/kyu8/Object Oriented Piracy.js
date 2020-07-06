@@ -10,3 +10,9 @@ class Ship {
         return (this.draft - crewUnits) > 20;
     }
 }
+
+function Ship2(draft,crew) {
+    this.draft = draft;
+    this.crew = crew;
+    this.isWorthIt = function(){return this.draft-(this.crew*1.5)>20}
+}
