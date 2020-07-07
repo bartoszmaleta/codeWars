@@ -8,8 +8,10 @@ var quote = function(fighter) {
     }
 };
 
+// SECOND SOLUTION
 var quote = function(fighter) {
     return fighter.charAt(0).toUpperCase() === 'C' ? "I'd like to take this chance to apologize.. To absolutely NOBODY!" : "I am not impressed by your performance.";
 };
 
+// THIRD SOLUTION
 const quote = fighter => fighter.toLowerCase() === 'conor mcgregor' ? "I'd like to take this chance to apologize.. To absolutely NOBODY!" : "I am not impressed by your performance."
