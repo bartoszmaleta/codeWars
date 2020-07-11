@@ -21,3 +21,21 @@ const remove = s => s.replace(/!+$/, '');
 function remove(s){
     return s.replace(/!+$/, '');
 }
+
+// FOURTH SOLUTION
+function remove(s)
+{
+    while(s && s.slice(-1) == "!")
+    {
+        s = s.slice(0,-1)
+    }
+    return s;
+}
+
+// FIFTH SOLUTION
+function remove(s){
+    for (var i = 0; s.endsWith("!"); i++) {
+        s.endsWith("!") ? s = s.slice(0 , -1) : s;
+    }
+    return s;
+}
