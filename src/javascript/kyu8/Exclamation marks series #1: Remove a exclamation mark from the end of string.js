@@ -1,12 +1,23 @@
-function remove(s){
-    if (s.charAt(s.length - 1) === '!') {
-        s = s.substring(0, s.length - 1);
-        return s;
+function remove(s) {
+    let words = s.split(' ');
+    words[words.length - 1].replace('!', '');
+    let lastWord = words[words.length - 1];
+    let newLastWord = '';
+
+    lastWord.charAt(0) === '!' ? newLastWord += '!' : '';
+
+    for (let i = 0; i < lastWord.length; i++) {
+        lastWord.charAt(i) === '!' ? newLastWord += '' : newLastWord += lastWord.charAt(i);
     }
-    return s;
+    words.pop();
+    words.push(newLastWord);
+    return words.join(' ');
 }
 
 // SECOND SOLUTION
+const remove = s => s.replace(/!+$/, '');
+
+// THIRD SOLUTION
 function remove(s){
-    return (s.charAt(s.length - 1) === '!' ? s.substring(0, s.length - 1) : s);
+    return s.replace(/!+$/, '');
 }
