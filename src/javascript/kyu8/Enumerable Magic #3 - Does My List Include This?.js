@@ -1,6 +1,11 @@
 function include(arr, item){
-  return arr.indexOf(item) >= 0 ? true : false;
+  return arr.indexOf(item) >= 0;
 }
 
-// SECOND SOLUTION
+// SECOND SOLUTIOcN
 const include2 = (arr, item) => arr.indexOf(item) >= 0;
+
+// THIRD SOLUTIOcN
+function include3(arr, item){
+    return arr.includes(item);
+}
