@@ -1,0 +1,1 @@
+const spEng = sentence => /english/gi.test(sentence);
