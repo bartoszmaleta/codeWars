@@ -5,6 +5,9 @@ public class GhostCode {
         System.out.println(helloName("Javatlacati"));;
     }
 
+    // beware, this gets translated to ENTER: \u000d // name="dumb";
+
+
     public static String helloName(String name) {
         if (name == null || name.equals(""))
             return "Hello world!";
