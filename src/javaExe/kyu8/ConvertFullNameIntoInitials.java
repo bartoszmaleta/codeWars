@@ -13,11 +13,12 @@ public class ConvertFullNameIntoInitials {
         return fullnameArray[0].toUpperCase().charAt(0) + "." + fullnameArray[1].toUpperCase().charAt(0);
     }
 
-
+    // SECOND SOLUTION
     public static String abbrevName2(String name) {
         return name.toUpperCase().replaceAll("(.).*\\s(.).*", "$1.$2");
     }
 
+    // THIRD SOLUTION
     public static String abbrevName3(String name) {
         return Arrays.stream(name.split(" "))
                 .map(String::toUpperCase)
