@@ -6,11 +6,12 @@ public class FixMeGetFullName {
     private String lastName;
 
     public FixMeGetFullName(String firstName, String lastName) {
-        this.firstName = firstName;
-        this.lastName = lastName;
+        this.firstName = firstName.trim();
+        this.lastName = lastName.trim();
     }
 
     public String getFullName() {
+        if (firstName.equals("") || lastName.equals("")) return "";
         return firstName + " " + lastName;
     }
 
