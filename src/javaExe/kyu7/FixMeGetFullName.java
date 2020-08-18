@@ -2,8 +2,8 @@ package javaExe.kyu7;
 
 public class FixMeGetFullName {
 
-    private String firstName;
-    private String lastName;
+    private final String firstName;
+    private final String lastName;
 
     public FixMeGetFullName(String firstName, String lastName) {
         this.firstName = firstName.trim();
@@ -11,8 +11,12 @@ public class FixMeGetFullName {
     }
 
     public String getFullName() {
-        if (firstName.equals("") || lastName.equals("")) return "";
-        return firstName + " " + lastName;
+        return firstName.equals("") ? lastName : lastName.equals("") ? firstName : (firstName + " " + lastName);
+    }
+
+    // SECOND OPTION
+    public String getFullName2() {
+        return (firstName + " " + lastName).trim();
     }
 
     public static void main(String[] args) {
