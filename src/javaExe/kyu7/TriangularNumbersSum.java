@@ -16,4 +16,9 @@ public class TriangularNumbersSum {
 //        System.out.println(sumTriangularNumbers(943));
     }
 
+    public static int sumTriangularNumbers2(int n)
+    {
+        return (n <= 0) ? 0 : n*(n+1)*(n+2)/6;
+    }
+
 }
