@@ -11,6 +11,11 @@ public class DivisibleByGivenNumber {
         return Arrays.stream(numbers).boxed().filter(number -> number % divider == 0).mapToInt(number -> number).toArray();
     }
 
+    // WITHOUT REDUNDANT METHODS
+    public static int[] divisibleBy3(int[] numbers, int divider) {
+        return Arrays.stream(numbers).filter(number -> number % divider == 0).toArray();
+    }
+
     //EASIER TO UNDERSTAND
     public static int[] divisibleBy2(int[] numbers, int divider) {
         List<Integer> result = Arrays.stream(numbers).boxed().filter(number -> number % divider == 0).collect(Collectors.toList());
