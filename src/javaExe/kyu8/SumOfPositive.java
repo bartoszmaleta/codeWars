@@ -12,6 +12,8 @@ public class SumOfPositive {
         }
         return sum;
     }
+
+    // SECOND OPTION
     public static int sum2(int[] arr){
         return Arrays.stream(arr).filter(number -> number > 0).sum();
     }
