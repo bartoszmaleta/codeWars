@@ -16,4 +16,8 @@ public class NullObject {
         NullObject nullObject = (NullObject) obj;
         return obj == null || (nullObject.hashCode() == this.hashCode());
     }
+
+    public boolean equals2(Object other) {
+        return other == null || other instanceof NullObject;
+    }
 }
