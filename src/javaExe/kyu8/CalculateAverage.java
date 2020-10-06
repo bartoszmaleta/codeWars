@@ -13,6 +13,6 @@ public class CalculateAverage {
 
     // SECOND OPTION
     public static double find_average2(int[] array){
-        return Arrays.stream(array).average().getAsDouble();
+        return Arrays.stream(array).average().orElse(0);
     }
 }
