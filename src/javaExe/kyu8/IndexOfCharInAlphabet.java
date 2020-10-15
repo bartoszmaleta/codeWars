@@ -30,13 +30,11 @@ public class IndexOfCharInAlphabet {
         System.out.println(position('e'));
     }
 
-    public static String positio3(char alphabet)
-    {
+    public static String positio3(char alphabet) {
         return "Position of alphabet: " + ((int) alphabet - 96);
     }
 
-    public static String position4(char alphabet)
-    {
-        return "Position of alphabet: " + (alphabet-'a'+1);
+    public static String position4(char alphabet) {
+        return "Position of alphabet: " + (alphabet - 'a' + 1);
     }
 }
