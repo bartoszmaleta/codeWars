@@ -14,6 +14,6 @@ public class CatYearsDogYears {
         years[0] = humanYears;
         years[1] = humanYears == 1 ? 15 : humanYears == 2 ? 24 : 24 + (4 * (humanYears - 2));
         years[2] = humanYears == 1 ? 15 : humanYears == 2 ? 24 : 24 + (5 * (humanYears - 2));
-//        return years;
+        return years;
     }
 }
