@@ -3,7 +3,7 @@ package javaExe.kyu8;
 import java.util.Arrays;
 
 public class FindTheSlope {
-    public static String slope(int[] points) {
+    public static String slope2(int[] points) {
         int x1 = points[0];
         int y1 = points[1];
         int x2 = points[2];
@@ -32,7 +32,7 @@ public class FindTheSlope {
         return String.valueOf(deltaY / deltaX);
     }
 
-    public static String slope2(int[] points) {
+    public static String slope(int[] points) {
         int x1 = points[0];
         int y1 = points[1];
         int x2 = points[2];
@@ -42,7 +42,6 @@ public class FindTheSlope {
         int deltaY = y2 - y1;
 
         return deltaX == 0 ? "undefined"
-                : deltaY == 0 ? "0"
                 : String.valueOf(deltaY / deltaX);
     }
 
