@@ -35,4 +35,3 @@ public class StringyStrings {
                 .collect(Collectors.joining(""));
     }
 }
-giu
