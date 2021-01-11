@@ -7,4 +7,10 @@ public class FormattingDecimalPlaces {
     {
         return Double.parseDouble(new DecimalFormat("##.##").format(number));
     }
+
+    // SECOND OPTION
+    public static double TwoDecimalPlaces2(double number)
+    {
+        return (Math.round(number*100))/100.0;
+    }
 }
