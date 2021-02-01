@@ -1,5 +1,7 @@
 package javaExe.kyu7;
 
+import java.util.stream.Collectors;
+
 public class AlternateCase {
     static String alternateCase(final String string) {
         StringBuilder sb = new StringBuilder();
@@ -13,4 +15,14 @@ public class AlternateCase {
         }
         return sb.toString();
     }
+
+    // SECOND OPTION
+    static String alternateCase2(final String string) {
+        return string.chars()
+                .mapToObj(i -> new Character((char) i))
+                .map(i -> Character.isUpperCase(i) ? Character.toLowerCase(i) : Character.toUpperCase(i))
+                .map(i -> i.toString())
+                .collect(Collectors.joining(""));
+    }
+
 }
