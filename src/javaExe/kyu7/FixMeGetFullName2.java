@@ -1,11 +1,11 @@
 package javaExe.kyu7;
 
-public class FixMeGetFullName {
+public class FixMeGetFullName2 {
 
     private final String firstName;
     private final String lastName;
 
-    public FixMeGetFullName(String firstName, String lastName) {
+    public FixMeGetFullName2(String firstName, String lastName) {
         this.firstName = firstName.trim();
         this.lastName = lastName.trim();
     }
@@ -20,7 +20,7 @@ public class FixMeGetFullName {
     }
 
     public static void main(String[] args) {
-        FixMeGetFullName fixMeGetFullName = new FixMeGetFullName("Qwer", "Zxc");
+        FixMeGetFullName2 fixMeGetFullName = new FixMeGetFullName2("Qwer", "Zxc");
         System.out.println(fixMeGetFullName.getFullName());
     }
 
